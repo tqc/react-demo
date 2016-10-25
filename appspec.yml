@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+    - source: /
+      destination: /apps/react-demo-web
+hooks:
+#  ApplicationStop:
+#    - location: deployment/index.js
+#      timeout: 180
+  BeforeInstall:
+    - location: deployment/index.js
+      timeout: 180
+  AfterInstall:
+    - location: deployment/index.js
+      timeout: 180
+  ApplicationStart:
+    - location: deployment/index.js
+      timeout: 180
+  ValidateService:
+    - location: deployment/index.js
+      timeout: 180

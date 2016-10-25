@@ -1,0 +1,86 @@
+.appsection {
+    display: flex;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: #eee;
+    z-index: 1;
+    overflow:hidden;
+    text-align: center;
+    .backlink {
+        display: block;
+        position:absolute;
+        top: 0;
+        left: 10px;
+        font-weight: 300;
+        font-size: 16pt;
+        color: inherit;
+        text-decoration: none;
+        line-height: 40px;
+        .lnr {
+            font-size: 14pt;
+            margin-right: 10px;
+        }
+    }
+    h1 {
+        font-weight: 300;
+        font-size: 20pt;
+        margin: 0;
+    }
+}
+
+.bottomtabs {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #eee;
+    z-index: 1;
+    overflow:hidden;
+    text-align: center;
+    a {
+        display: inline-block;
+        text-decoration:none;
+        width: 40px;
+        height: 40px;
+        margin: 10px 30px;
+        color: inherit;
+        .lnr {
+            display: block;
+            font-size: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+        }
+        .caption {
+            display: block;
+
+            font-size: 8pt;
+        }
+    }
+}
+
+.leftnav {
+    width:320px;
+    z-index: 1;
+    border-right: 1px solid #eee;
+    .leftnav-inner {
+        padding-top: 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+.mainpanel {
+    flex-grow: 1;
+    padding-top: 40px;
+}

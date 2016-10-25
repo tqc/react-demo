@@ -1,0 +1,8 @@
+{
+    "extends": ["tqc/react"],
+    "rules": {
+        "handle-callback-err": "warn",
+        "react/prop-types": "warn",
+        "no-alert": "warn"
+    }
+}

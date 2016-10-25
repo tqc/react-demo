@@ -1,0 +1,18 @@
+.formrow {
+    max-width: 400px;
+    margin:auto;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    label {
+        min-width: 150px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    select {
+        min-width: 200px;
+    }
+    button {
+
+    }
+}
