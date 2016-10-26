@@ -114,7 +114,7 @@ gulp.task('buildcss', function(done) {
 
 gulp.task('buildprod', ["copystatic", "buildcss", "buildjs", "rebuildserver"]);
 
-gulp.task('watch', ["copystatic", "buildcss", "startserver"], function() {
+gulp.task('watch', ["copystatic", "buildcss", "startserver", "buildjs"], function() {
 
     gulp.watch('server/**/*.js', ["restartserver"]);
 
