@@ -10,13 +10,8 @@ var port = process.env.PORT || 5020;
 var express = require("express");
 var app = express();
 
-app.use(require('express-ejs-layouts'));
-
 app.use(expressCookieParser());
 app.use(expressBodyParser.json());
-
-//   var api = require("./api");
-//   api(app, db, auth);
 
 app.get("/api/featured", function(req, res) {
     API.getFeaturedCar(function(err, car) {
