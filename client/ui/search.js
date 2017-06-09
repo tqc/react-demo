@@ -40,7 +40,7 @@ class SearchPage extends React.Component {
                 <button className="searchbutton" disabled={!this.props.selectedModel} onClick={this.goClicked}>Go</button>
             </div>
             </div>
-            );
+        );
     }
     goClicked() {
         this.context.router.push('/make/model/' + this.props.selectedModel);

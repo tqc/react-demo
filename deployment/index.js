@@ -1,15 +1,12 @@
 #!/usr/bin/env node
 
-var SimpleDeployment = require("codedeploy-scripts").SimpleDeployment;
+var NodeDeployment = require("codedeploy-scripts").NodeDeployment;
 
-var deployment = new SimpleDeployment({
+var deployment = new NodeDeployment({
     appName: "react-demo-web",
     nodePort: "5020",
     serverScript: "build/server/index.js",
-    domains: "react-demo.tqclarkson.com",
-    buildFolder: "build/static",
-    secretBucket: "tqc-encrypted",
-    useSSL: false
+    secretBucket: "tqc-encrypted"
 });
 
 deployment.run();

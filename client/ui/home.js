@@ -40,7 +40,7 @@ class StartPage extends React.Component {
             </div>
                 {content}
             </div>
-            );
+        );
     }
 }
 

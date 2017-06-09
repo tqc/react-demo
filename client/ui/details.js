@@ -46,7 +46,7 @@ class DetailPage extends React.Component {
             </div>
             {content}
             </div>
-            );
+        );
     }
 }
 
